@@ -10,9 +10,9 @@ Para mayor simplicidad al momento de probar y ejecutar el codigo se utilizará l
 1. Visita [Repl.it](https://repl.it/).
 2. Crea una nueva cuenta o inicia sesión si ya tienes una.
 3. Una vez en tu dashboard, selecciona "Create Repl" y elige "Import from GitHub".
-4. Pega la URL del repositorio: `URL REPOSITORIO`.
+4. Pega la URL del repositorio: `https://github.com/YeahBro5/Tarea-2`.
 5. [Repl.it](http://repl.it/) clonará el repositorio y preparará un entorno de ejecución.
-6. Configure el comando de compilación con `COMANDO DE COMPILACION` y el comando run con (`COMANDO RUN`).
+6. Configure el comando de compilación con `gcc tdas/*.c tarea2.c -Wno-unused-result -o tarea2` y el comando run con (`./tarea2`).
 7. Presiona el botón "Run" para compilar y ejecutar la aplicación.
 
 ## Funcionalidades
