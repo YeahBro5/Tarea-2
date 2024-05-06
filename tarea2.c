@@ -44,9 +44,9 @@ void buscarPorGeneroDecada(Map *pelis_bygenre, Map *pelis_bydecada);
 
 int main() {
   char opcion;
-  Map *pelis_byid = map_create(is_equal_str);
-  Map *pelis_bygenre = map_create(is_equal_str);
-  Map *pelis_bydecada = map_create(is_equal_str);
+  Map *pelis_byid = map_create(is_equal_str); // Mapa key = ID
+  Map *pelis_bygenre = map_create(is_equal_str); // Mapa key = Género
+  Map *pelis_bydecada = map_create(is_equal_str); // Mapa key = Década
   
 
   do {
@@ -55,22 +55,22 @@ int main() {
     scanf(" %c", &opcion);
 
     switch (opcion) {
-    case '1':
+    case '1': // Menú "Cargar Películas"
       cargar_peliculas(pelis_byid, pelis_bygenre, pelis_bydecada);
       break;
-    case '2':
+    case '2': // Menú "Buscar por id"
       buscar_por_id(pelis_byid);
       break;
-    case '3':
+    case '3': // Menú "Buscar por género"
       buscar_por_genre(pelis_bygenre);
       break;
-    case '4':
+    case '4': // Menú "Buscar por década"
       buscarPorDecada(pelis_bydecada);
       break;
-    case '5':
+    case '5': // Menú "Buscar por década y género"
       buscarPorGeneroDecada(pelis_bygenre, pelis_bydecada);
       break;
-    case '6':
+    case '6': // Salir
       puts("Saliendo de la base de datos..."); 
       break;
     default:
@@ -80,6 +80,7 @@ int main() {
 
   } while (opcion != '6');
 
+  // Liberación de memoria de los mapas
   free(pelis_byid);
   free(pelis_bygenre);
   free(pelis_bydecada);
