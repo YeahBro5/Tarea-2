@@ -114,15 +114,17 @@ void presioneTeclaParaContinuar() {
   getchar(); // Espera a que el usuario presione una tecla
 }
 
+// Función encargada de la comparación de strings.
 int is_equal_str(void *key1, void *key2) {
   return strcmp((char *)key1, (char *)key2) == 0;
 }
 
+// Función encargada de la comparación de enteros.
 int is_equal_int(void *key1, void *key2) {
   return *(int *)key1 == *(int *)key2;
 }
 
-// Función encargada de asegurar que se entregue el formato correcto en los géneros
+// Función encargada de asegurar que se entregue el formato correcto en los géneros.
 void pasarAFormato(char *cadena)
 {
   for (int i = 0; cadena[i] != '\0'; i++)
