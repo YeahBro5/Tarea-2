@@ -43,7 +43,7 @@ ID: tt0040982, Título: You Gotta Stay Happy, Año: 1948, Rating: 6.7
 ...
 ...
 ````
-"El sistema carga todas las películas y las muestra con parte de la información (ID, TÍTULO, AÑO, RATING)."
+El sistema carga todas las películas y las muestra con parte de la información (ID, TÍTULO, AÑO, RATING).
 
 **Paso 2: Buscar por id**
 
